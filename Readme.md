@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Igor Kozmarev](https://up.htmlacademy.ru/adaptive/19/user/1282213).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Игнатенко](https://htmlacademy.ru/profile/id987931).
 
 ---
 
