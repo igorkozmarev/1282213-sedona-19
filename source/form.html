@@ -34,82 +34,79 @@
       <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset">
-          <legend class="acquaintance"><b>Представьтесь</b></legend>
-          <p>
-            <label for="acquaintance__name">Имя<sup>*</sup>:</label>
-            <input id="acquaintance__name" type="text" name="acquaintance__name" value="" placeholder="Пётр">
-          </p>
-          <p>
-            <label for="acquaintance__lastname">Фамилия<sup>*</sup>: </label>
-            <input id ="acquaintance__lastname" type="text" name="acquaintance__lastname" value="" placeholder="Иванов">
-          </p>
-          <p>
-            <label for="acquaintance__patronymic">Отчество:</label>
-            <input id="acquaintance__patronymic" type="text" name="acquaintance__patronymic" value="" placeholder="Александрович">
-          </p>
+          <legend class="form__acquaintance">Представьтесь</legend>
+          <div class="field-text">
+            <label  class="field-text__label" for="name">Имя<sup>*</sup>:</label>
+            <input id="name" class="field-text__input" type="text" placeholder="Пётр">
+          </div>
+          <div class="field-text">
+            <label class="field-text__label" for="lastname">Фамилия<sup>*</sup>: </label>
+            <input id ="lastname" class="field-text__input" type="text" placeholder="Иванов">
+          </div>
+          <div class="field-text">
+            <label class="field-text__label" for="patronymic">Отчество:</label>
+            <input id="patronymic" class="field-text__input" type="text" placeholder="Александрович">
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="contacts"><b>Контактная информация</b></legend>
-          <p>
-            <label for="contacts__phone">Контактный телефон<sup>*</sup>:</label>
-            <input id="contacts__phone" type="tel" name="contacts__phone" value="" placeholder="Введите телефон">
-          </p>
-          <div class="contacts__phone-pic">
+          <legend class="form__acquaintance">Контактная информация</legend>
+          <div class="field-contacts">
+            <label class="field-contacts__label" for="phone">Контактный телефон<sup>*</sup>:</label>
+            <input id="phone" class="field-contacts__input" type="tel" placeholder="Введите телефон">
+          </div>
+          <div class="phone-pic">
             <label for=" "><span> </span></label>
             <input type="img">
           </div>
-          <p>
-            <label for="contacts__email">Электронная почта<sup>*</sup>: </label>
-            <input id ="contacts__email" type="email" name="contacts__email" value="" placeholder="Введите e-mail">
-          </p>
-          <div class="contacts__email-pic">
+          <div class="field-contacts">
+            <label class="field-contacts__label" for="email">Электронная почта<sup>*</sup>: </label>
+            <input id ="email" class="field-contacts__input" type="email" placeholder="Введите e-mail">
+          </div>
+          <div class="email-pic">
             <label for=" "><span> </span></label>
             <input type="img">
           </div>
         </fieldset>
         <fieldset class="form__fildset">
-          <legend class="impression"><b>Ваше общее впечатление:</b></legend>
-          <ul class="impression__list">
-            <li class="impression__item">
-              <input type="radio" class="visually-hidden impression__input-radio" name="impression" value="positive" id="impression-positive" checked>
-              <label for="impression-positive">Скорее положительное</label>
-            </li>
-            <li class="impression__item">
-              <input type="radio" class="visually-hidden impression__input-radio" name="impression" value="negative" id="impression-negative">
-              <label for="impression-negative">Скорее отрицательное</label>
-            </li>
-            <li class="impression__item">
-              <input type="radio" class="visually-hidden impression__input-radio" name="impression" value="difficult" id="impression-difficult">
-              <label for="impression-difficult">Затрудняюсь ответить</label>
-            </li>
-          </ul>
+          <legend class="form__acquaintance">Ваше общее впечатление:</legend>
+          <div class="field-radio">
+            <input class="field-radio__input" type="radio" name="impression" value="positive" id="impression-positive" checked>
+            <label class="field-radio__label" for="impression-positive">Скорее положительное</label>
+          </div>
+          <div class="field-radio">
+            <input class="field-radio__input" type="radio" name="impression" value="negative" id="impression-negative">
+            <label class="field-radio__label" for="impression-negative">Скорее отрицательное</label>
+          </div>
+          <div class="field-radio">
+            <input class="field-radio__input" type="radio" name="impression" value="difficult" id="impression-difficult">
+            <label class="field-radio__label" for="impression-difficult">Затрудняюсь ответить</label>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="checkbox"><b>Посещённые достопримечательности:</b></legend>
-                <ul class="checknox__list">
-                  <li class="checknox__item">
-                    <input type="checkbox" class="visually-hidden checkbox__input-checkbox" name="bridge" id="bridge" checked>
-                    <label for="bridge"> Мост дьявола </label>
-                  </li>
-                  <li class="checknox__item">
-                    <input type="checkbox" class="visually-hidden checkbox__input-checkbox" name="mountain-bell" id="mountain-bell" checked>
-                    <label for="mountain-bell">Гора-колокол</label>
-                  </li>
-                  <li class="checknox__item">
-                    <input type="checkbox" class="visually-hidden checkbox__input-checkbox" name="slide-park" id="slide-park" checked>
-                    <label for="slide-park">Слайд-парк</label>
-                  </li>
-                  <li class="checknox__item">
-                    <input type="checkbox" class="visually-hidden checkbox__input-checkbox" name="red-rocks" id="red-rocks">
-                    <label for="red-rocks">Красные скалы</label>
-                  </li>
+          <legend class="form__acquaintance">Посещённые достопримечательности:</legend>
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="attractions" id="bridge" checked>
+            <label class="field-checkbox__label" for="bridge"> Мост дьявола </label>
+          </div>
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="attractions" id="mountain-bell" checked>
+            <label class="field-checkbox__label" for="mountain-bell">Гора-колокол</label>
+          </div>
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="attractions" id="slide-park" checked>
+            <label class="field-checkbox__label" for="slide-park">Слайд-парк</label>
+          </div>
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="attractions" id="red-rocks">
+            <label class="field-checkbox__label" for="red-rocks">Красные скалы</label>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="emotions"><b>Опишите свои эмоции</b></legend>
-          <p>
-            <label class="visually-hidden" for="emotions__name">Опишите подробно все свои эмоции:</label>
-            <input id="emotions__free" type="text" name="emotions__free" value="" placeholder="Опишите подробно все свои эмоции">
-          </p>
+          <legend class="form__acquaintance">Опишите свои эмоции</legend>
+          <div class="field-review">
+            <label class="field-review__label visually-hidden" for="emotions">Опишите подробно все свои эмоции:</label>
+            <textarea id="emotions" class="field-review__textarea" placeholder="Опишите подробно все свои эмоции"></textarea>
+          </div>
         </fieldset>
         <button class="button" type="submit">Отправить отзыв</button>
       </form>
