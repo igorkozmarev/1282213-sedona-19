@@ -1,10 +1,15 @@
 .city {
   background-color: #ffffff;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
   }
 
   .city__list {
     list-style: none;
     text-align: left;
+    margin: 0;
+    padding: 0;
   }
 
   .city__title {
@@ -13,6 +18,8 @@
     font-style: 700;
     color: #000000;
     text-transform: uppercase;
+    padding-left: 70px;
+    padding-right: 40px;
    }
 
    .city__description {
@@ -20,4 +27,40 @@
     line-height: 21 / 14;
     text-transform: uppercase;
     color: #333333;
+    padding-left: 70px;
+    padding-right: 40px;
    }
+   @media (min-width: @tablet-width) {
+    .city {
+      text-align: center;
+      width: 768px;
+      margin: 0 auto;
+     }
+     .city__list {
+       text-align: center;
+       display: flex;
+       justify-content: space-between;
+     }
+     .city__title {
+      font-size: 21px;
+      line-height: 26 / 21;
+      font-style: 700;
+      color: #000000;
+      text-transform: uppercase;
+
+     }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    .city {
+      text-align: center;
+      width: 1200px;
+      margin: 0 auto;
+     }
+     .city__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
