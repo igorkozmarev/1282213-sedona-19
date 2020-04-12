@@ -1,27 +1,14 @@
 .main-nav {
-background-color:#81b3d2;
-font-size: 18px;
-font-style: 700;
-line-height: 40 / 18;
-text-transform: uppercase;
-text-align: center;
-width: 320px;
-margin: 0 auto;
-}
+  background-color:#81b3d2;
+  font-size: 18px;
+  font-style: 700;
+  line-height: 40 / 18;
+  text-transform: uppercase;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-.main-nav__item a {
-text-decoration: none;
-color: #ffffff;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav {
+  @media (min-width: @tablet-width) {
     width: auto;
     margin: 0;
     background-color:#ffffff;
@@ -30,39 +17,95 @@ color: #ffffff;
     font-style: 700;
     line-height: 26 / 14;
     text-transform: uppercase;
+    }
+
+  @media (min-width: @desktop-width) {
+
   }
 
-  .main-nav__wrapper {
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+  }
+}
+.main-nav__item--logo {
+  order:1;
+
+  @media (min-width: @tablet-width) {
+    order:0;
+  }
+
+  @media (min-width: @desktop-width) {
+    order:0;
+  }
+}
+
+
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+  @media (min-width: @desktop-width) {
+    color: #000000;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
     width: 700px;
     margin: 0 auto;
   }
-  .main-nav__list {
-    width: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .main-nav__item a {
-    text-decoration: none;
-    color: #000000;
-    }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav__wrapper {
-    width: 1045px;
-  }
-
-  .main-nav__list {
-    width: 1045px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .main-nav__item a {
-    text-decoration: none;
-    color: #000000;
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
