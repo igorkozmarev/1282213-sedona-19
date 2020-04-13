@@ -12,25 +12,6 @@
   }
 }
 
-.advantages__list {
-  list-style: none;
-  background-color: #eeeeee;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.advantages__item {
- text-align: center;
- margin: 0 auto;
- }
-
-
 .advantages__title {
   font-size: 18px;
   line-height: 26 / 18;
@@ -59,7 +40,7 @@
     color: #ffffff;
     background-color: #81b3d2;
     width: 100%;
- }
+}
 
 .advantages__title--color {
   color: #ffffff;
@@ -69,4 +50,90 @@
   color: #ffffff;
 }
 
+.advantages__row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+ @media (min-width: @desktop-width) {
+
+ }
+}
+
+.advantages__row--reverse {
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
+ @media (min-width: @desktop-width) {
+  flex-direction: row-reverse;
+ }
+
+}
+
+.advantages__card {
+  margin: 0;
+  padding: 0;
+  flex: 0 0 percentage(1 / 3);
+  height: 190px;
+  background-color: #eeeeee;
+  outline: 1px solid red;
+
+  &--primary {
+    background-color: #81b3d2;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 256px;
+ }
+
+ @media (min-width: @desktop-width) {
+   height: 256px;
+ }
+}
+
+.advantages__photo {
+  flex: 0 0 percentage(3 / 3);
+  max-width: percentage(3 / 3);
+  height: 260px;
+
+
+   @media (min-width: @tablet-width) {
+    flex: 0 0 percentage(2 / 3);
+    max-width: percentage(2 / 3);
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 0 percentage(2 / 3);
+    max-width: percentage(2 / 3);
+    height: 256px;
+  }
+}
+.advantages__city {
+  flex: 0 0 percentage(3 / 3);
+  height: 140px;
+  background-color: #ffaa55;
+  outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+   flex: 0 0 percentage(1 / 3);
+    max-width: percentage(1 / 3);
+    height: 220px;
+  }
+}
+.advantages__city--order {
+  order: 0;
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
