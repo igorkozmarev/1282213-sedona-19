@@ -24,31 +24,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     width: 700px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
-.main-nav__item--logo {
-  order: 1;
-
-  @media (min-width: @tablet-width) {
-    order: 0;
   }
 }
 
