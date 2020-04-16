@@ -19,15 +19,9 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
-    font-style: 700;
-    line-height: 26 / 21;
-    color: #000000;
-    text-transform: uppercase;
-  }
 
-  @media (min-width: @desktop-width) {
+
+  @media (min-width: @tablet-width) {
     font-size: 21px;
     font-style: 700;
     line-height: 26 / 21;
@@ -41,45 +35,22 @@
   line-height: 26 / 14;
   color: #333333;
   text-transform: uppercase;
-
-  @media (min-width: @tablet-width) {
-    font-size: 14px;
-    line-height: 26 / 14;
-    color: #333333;
-    text-transform: uppercase;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 14px;
-    line-height: 26 / 14;
-    color: #333333;
-    text-transform: uppercase;
-  }
 }
 
 .main_wrapper {
-  width: 260px;
-  height: 150px;
-  // padding-top: 45px;
-  // padding-left: 30px;
-  // padding-right: 30px;
-  // padding-bottom: 35px;
+  width: 320px;
+  height: 200px;
+  margin: auto;
+  outline: 1px solid red;
 
   @media (min-width: @tablet-width) {
-    width: 498px;
-    height: 100px;
-    padding-top: 50px;
-    padding-left: 135px;
-    padding-right: 135px;
-    padding-bottom: 55px;
+    margin-top: auto;
+    width: 768px;
+    height: 200px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 500px;
-    height: 100px;
-    padding-top: 50px;
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-bottom: 55px;
+    width: 1200px;
+    height: 200px;
   }
 }
