@@ -24,6 +24,13 @@
     display: flex;
   }
 }
+.city__text-wrapper {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
 
 .city__title {
   font-size: 18px;
@@ -32,7 +39,7 @@
   color: #000000;
   text-transform: uppercase;
   display: block;
-  text-align: center;
+  padding-left: 70px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -40,6 +47,7 @@
     font-style: 700;
     color: #000000;
     text-transform: uppercase;
+    padding: 0px;
   }
 }
 
@@ -49,7 +57,16 @@
   text-transform: uppercase;
   color: #333333;
   padding-left: 70px;
-  padding-right: 40px;
+
+  @media (min-width: @tablet-width) {
+   padding: 0;
+   margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+  }
+
 }
 
 .city__icon {
@@ -66,5 +83,6 @@
     text-align: center;
     width: auto;
     height: auto;
+    margin-bottom: 30px;
   }
 }
