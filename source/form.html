@@ -40,7 +40,7 @@
         <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--first">
           <legend class="form__acquaintance">Представьтесь</legend>
           <div class="field-text">
             <label  class="field-text__label" for="name">Имя<sup>*</sup>:</label>
@@ -55,28 +55,37 @@
             <input id="patronymic" class="field-text__input" type="text" placeholder="Александрович">
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--second">
           <legend class="form__acquaintance">Контактная информация</legend>
           <div class="field-text">
             <label class="field-text__label" for="phone">Контактный телефон<sup>*</sup>:</label>
             <input id="phone" class="field-text__input" type="tel" placeholder="Введите телефон">
           </div>
-          <div class="phone-pic">
+          <div class="form__phone-pic">
             <label class="phone-pic__icon" for=" ">
-              <span><img src="#" width=" " height=" " alt="Иконка телефона"></span>
+              <span><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                <g id="Page-1">
+                  <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                    <g id="phone" transform="translate(85.000000, 126.000000)">
+                      <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              </span>
             </label>
           </div>
           <div class="field-text">
             <label class="field-text__label" for="email">Электронная почта<sup>*</sup>: </label>
             <input id ="email" class="field-text__input" type="email" placeholder="Введите e-mail">
           </div>
-          <div class="email-pic">
+          <div class="form__email-pic">
             <label class="email-pic__icon" for=" ">
               <span><img src="#" width=" " height=" " alt="Иконка e-mail"></span>
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fildset">
+        <fieldset class="form__fieldset form__fieldset--third">
           <legend class="form__acquaintance">Ваше общее впечатление:</legend>
           <div class="field-radio">
             <input class="field-radio__input" type="radio" name="impression" value="positive" id="impression-positive" checked>
@@ -91,7 +100,7 @@
             <label class="field-radio__label" for="impression-difficult">Затрудняюсь ответить</label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--fourth">
           <legend class="form__acquaintance">Посещённые достопримечательности:</legend>
           <div class="field-checkbox">
             <input class="field-checkbox__input" type="checkbox" name="bridge" id="bridge" checked>
@@ -110,7 +119,7 @@
             <label class="field-checkbox__label" for="red-rocks">Красные скалы</label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--fifth">
           <legend class="form__acquaintance">Опишите свои эмоции</legend>
           <div class="field-review">
             <label class="field-review__label visually-hidden" for="emotions">Опишите подробно все свои эмоции :</label>
