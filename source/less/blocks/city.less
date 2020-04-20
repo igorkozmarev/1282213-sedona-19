@@ -1,23 +1,88 @@
 .city {
   background-color: #ffffff;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
   }
 
-  .city__list {
-    list-style: none;
-    text-align: left;
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
+}
 
-  .city__title {
-    font-size: 18px;
-    line-height: 26 / 18;
+.city__list {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    display: flex;
+  }
+}
+.city__text-wrapper {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
+
+.city__title {
+  font-size: 18px;
+  line-height: 26 / 18;
+  font-style: 700;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26 / 21;
     font-style: 700;
     color: #000000;
     text-transform: uppercase;
-   }
+    padding: 0px;
+  }
+}
 
-   .city__description {
-    font-size: 14px;
-    line-height: 21 / 14;
-    text-transform: uppercase;
-    color: #333333;
-   }
+.city__description {
+  font-size: 14px;
+  line-height: 21 / 14;
+  text-transform: uppercase;
+  color: #333333;
+  padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+   padding: 0;
+   margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+  }
+
+}
+
+.city__icon {
+  width: 40px;
+  height: 40px;
+  color: #81b3d2;
+
+  svg {
+    fill: currentColor;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}

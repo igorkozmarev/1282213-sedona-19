@@ -1,11 +1,36 @@
 .social {
   list-style: none;
-  background-color: #81b3d2;
+  width: 150px;
+  height: 50px;
   display: flex;
-  justify-content:space-between;
-  align-content:center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin:0 auto;
+    }
 }
-.social__item a {
-  text-decoration: none;
+
+.social__item {
+  margin: auto;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
+
+  svg {
+    fill: currentColor;
+  }
 }

@@ -1,6 +1,15 @@
 .page-main {
- text-align: center;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
 
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-main__title {
@@ -9,6 +18,15 @@
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    font-style: 700;
+    line-height: 26 / 21;
+    color: #000000;
+    text-transform: uppercase;
+   }
 }
 
 .page-main__description {
@@ -18,3 +36,17 @@
   text-transform: uppercase;
 }
 
+.page-main_wrapper {
+  width: 320px;
+  outline: 1px solid red;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}

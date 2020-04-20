@@ -1,5 +1,7 @@
 .field-text {
-text-align: left;
+  text-align: left;
+  margin-bottom: 25px;
+  display: flex;
 }
 
 .field-text__label {
@@ -7,6 +9,10 @@ text-align: left;
   line-height: 26 / 14;
   color: #333333;
   text-transform: uppercase;
+  align-self: center;
+  width: auto;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .field-text__input {
@@ -15,4 +21,6 @@ text-align: left;
   line-height: 26 / 18;
   color: #000000;
   background-color: #f2f2f2;
+  height: 58px;
+  width: auto;
 }

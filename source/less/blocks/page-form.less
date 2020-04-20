@@ -1,5 +1,15 @@
 .page-form {
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-form__title {
@@ -8,10 +18,21 @@
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
+
 .page-form__description {
   font-size: 14px;
   line-height: 24 / 14;
   color: #333333;
   text-transform: uppercase;
+}
+
+.page-form__title-wrapper {
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

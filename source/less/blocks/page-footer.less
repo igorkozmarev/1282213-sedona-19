@@ -1,5 +1,40 @@
 .page-footer {
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
+.page-footer__wrapper {
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.page-footer__visitsedona {
+  margin: auto;
+  width: 140px;
+  height: 20px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26/21;
+  font-style: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+  margin:0 auto;
+  }
+}

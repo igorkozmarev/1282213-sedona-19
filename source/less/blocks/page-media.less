@@ -1,5 +1,15 @@
 .page-media {
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-media__title {
@@ -8,10 +18,38 @@
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    font-style: 700;
+    line-height: 26 / 21;
+    color: #000000;
+    text-transform: uppercase;
+  }
 }
+
 .page-media__description {
   font-size: 14px;
   line-height: 24 / 14;
   color: #333333;
   text-transform: uppercase;
+}
+
+.page-media_wrapper {
+  margin-top: 0;
+  width: 320px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 75px;
+    outline: 1px solid red;
+    margin-bottom: 58px;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 110px;
+    width: 1200px;
+  }
 }
