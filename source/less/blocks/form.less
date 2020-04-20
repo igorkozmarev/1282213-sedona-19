@@ -1,5 +1,17 @@
+.form {
+}
+
 .form__fieldset {
   text-align: center;
+  // outline: 1px solid blue;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__acquaintance {
@@ -8,4 +20,5 @@
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
+
 }
