@@ -40,7 +40,8 @@
         <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset form__fieldset--first">
+        <div class="form-wrapper">
+          <fieldset class="form__fieldset form__fieldset--first">
           <legend class="form__acquaintance">Представьтесь</legend>
           <div class="field-text">
             <label  class="field-text__label" for="name">Имя<sup>*</sup>:</label>
@@ -54,8 +55,8 @@
             <label class="field-text__label" for="patronymic">Отчество:</label>
             <input id="patronymic" class="field-text__input" type="text" placeholder="Александрович">
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--second">
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--second">
           <legend class="form__acquaintance">Контактная информация</legend>
           <div class="field-text">
             <label class="field-text__label" for="phone">Контактный телефон<sup>*</sup>:</label>
@@ -81,11 +82,15 @@
           </div>
           <div class="form__email-pic">
             <label class="email-pic__icon" for=" ">
-              <span><img src="#" width=" " height=" " alt="Иконка e-mail"></span>
+              <span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                  <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                </svg>
+              </span>
             </label>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--third">
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--third">
           <legend class="form__acquaintance">Ваше общее впечатление:</legend>
           <div class="field-radio">
             <input class="field-radio__input" type="radio" name="impression" value="positive" id="impression-positive" checked>
@@ -99,8 +104,8 @@
             <input class="field-radio__input" type="radio" name="impression" value="difficult" id="impression-difficult">
             <label class="field-radio__label" for="impression-difficult">Затрудняюсь ответить</label>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--fourth">
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--fourth">
           <legend class="form__acquaintance">Посещённые достопримечательности:</legend>
           <div class="field-checkbox">
             <input class="field-checkbox__input" type="checkbox" name="bridge" id="bridge" checked>
@@ -118,14 +123,15 @@
             <input class="field-checkbox__input" type="checkbox" name="red-rocks" id="red-rocks">
             <label class="field-checkbox__label" for="red-rocks">Красные скалы</label>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--fifth">
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--fifth">
           <legend class="form__acquaintance">Опишите свои эмоции</legend>
           <div class="field-review">
             <label class="field-review__label visually-hidden" for="emotions">Опишите подробно все свои эмоции :</label>
             <textarea id="emotions" class="field-review__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-        </fieldset>
+          </fieldset>
+        </div>
         <button class="button" type="submit">Отправить отзыв</button>
       </form>
     </main>
@@ -173,5 +179,19 @@
         </div>
       </div>
     </footer>
+    <div class="popup">
+      <div class="popup-succes ">
+        <h3 class="popup-succes__title">Ваш отзыв отправлен!</h3>
+        <p class="popup-succes__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="button-wrapper">
+          <button class="button" type="submit">Закрыть окно</button>
+        </div>
+      </div>
+      <div class="popup-failure ">
+        <h3 class="popup-failure__title">Что-то пошло не так!</h3>
+        <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button" type="submit">Ок</button>
+      </div>
+    </div>
   </body>
 </html>
