@@ -14,11 +14,17 @@
 .form-wrapper {
   margin: 0;
   padding: 0;
-
   @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -35,6 +41,40 @@
     flex: 0 0 percentage(1 / 2);
     max-width: percentage(1 / 2);
     padding: 0;
+    order: 2;
+  }
+
+  &--third {
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--second {
+    @media (min-width: @tablet-width) {
+      height: auto;
+      flex: 1 0 100%;
+      max-width: percentage(100);
+      padding: 0;
+      outline: 2px solid darkred;
+    }
+  }
+  &--fourth,
+  &--fifth {
+    @media (min-width: @tablet-width) {
+      height: auto;
+      flex: 1 0 100%;
+      max-width: percentage(100);
+      padding: 0;
+      outline: 2px solid limegreen;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: auto;
+      flex: 1 0 100%;
+      max-width: percentage(100);
+      padding: 0;
+    }
   }
 }
 
@@ -50,6 +90,11 @@
 
 .form__phone-pic,
 .form__email-pic {
+  position: absolute;
+  top:0;
+  left: 100%;
+  transform: translateX(-100%) ;
+
   margin: auto;
   width: 58px;
   height: 58px;
@@ -70,4 +115,13 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+.form__fieldset__checkbox-wrapper {
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
