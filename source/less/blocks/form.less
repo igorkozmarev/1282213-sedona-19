@@ -11,9 +11,11 @@
     width: 1200px;
   }
 }
-.form-wrapper {
+
+.form__wrapper {
   margin: 0;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
@@ -22,7 +24,7 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -35,52 +37,76 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
-    width: auto;
-    height: auto;
-    outline: 2px solid green;
-    flex: 0 0 percentage(1 / 2);
-    max-width: percentage(1 / 2);
+    //outline: 2px solid green;
+    flex: 0 0 50%;
+    max-width: 50%;
     padding: 0;
     order: 2;
   }
+}
 
-  &--third {
-    @media (min-width: @tablet-width) {
-      order: 1;
-    }
+.form__fieldset--first {
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    padding-left: 60px;
   }
 
-  &--second {
-    @media (min-width: @tablet-width) {
-      height: auto;
-      flex: 1 0 100%;
-      max-width: percentage(100);
-      padding: 0;
-      outline: 2px solid darkred;
-    }
-  }
-  &--fourth,
-  &--fifth {
-    @media (min-width: @tablet-width) {
-      height: auto;
-      flex: 1 0 100%;
-      max-width: percentage(100);
-      padding: 0;
-      outline: 2px solid limegreen;
-    }
-
-    @media (min-width: @desktop-width) {
-      height: auto;
-      flex: 1 0 100%;
-      max-width: percentage(100);
-      padding: 0;
-    }
+  @media (min-width: @desktop-width) {
+    padding-left: 78px;
   }
 }
 
+.form__fieldset--second {
+  @media (min-width: @tablet-width) {
+    height: auto;
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-top: -38px; //точно знаю что это неправильно, но
+                      //пока не могу сообразить как нужно сделать
+  }
+}
+
+.form__fieldset--third {
+  @media (min-width: @tablet-width) {
+    order: 1;
+    border-right: 1px solid #e5e5e5;
+    text-align: left;
+    // padding-right: 48px;
+    max-width: 100%;
+  }
+}
+
+.form__fieldset--fourth {
+  @media (min-width: @tablet-width) {
+    height: auto;
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 0;
+    outline: 2px solid limegreen;
+  }
+}
+
+.form__fieldset--fifth {
+  border: none;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 0;
+    outline: 2px solid limegreen;
+    margin-bottom: 58PX;
+  }
+}
+
+
+
+
 .form__acquaintance {
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
@@ -88,40 +114,33 @@
   margin-bottom: 30px;
 }
 
-.form__phone-pic,
-.form__email-pic {
-  position: absolute;
-  top:0;
-  left: 100%;
-  transform: translateX(-100%) ;
-
-  margin: auto;
-  width: 58px;
-  height: 58px;
-  background-color: #e6e6e6;
-}
-
-.phone-pic__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.email-pic__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.form__fieldset__checkbox-wrapper {
-
+.form__star {
   @media (min-width: @tablet-width) {
-    width: 100%;
+
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
+    outline: 2px solid firebrick;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
+
+.form__star--description {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 24 / 14;
+    color: #333333;
+    text-transform: uppercase;
+  }
+}
+

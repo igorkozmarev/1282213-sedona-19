@@ -4,11 +4,44 @@
 
 .field-checkbox__input {
   background-color: #f2f2f2;
+  margin-bottom: 25px;
+
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .field-checkbox__label {
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
+  padding-left: 25px;
 }
+
+.form__fieldset__checkbox-wrapper {
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-left: 95px;
+
+    .field-checkbox {
+      flex: 0 0 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+
+    .field-checkbox {
+      flex-wrap: nowrap;
+      flex: 0 0 25%;
+    }
+  }
+}
+
+
