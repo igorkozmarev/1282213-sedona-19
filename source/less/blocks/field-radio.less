@@ -1,10 +1,20 @@
 .field-radio {
   text-align: left;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .field-radio__label {
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
+  padding-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 }

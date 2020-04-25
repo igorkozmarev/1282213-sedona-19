@@ -4,23 +4,76 @@
   display: flex;
 }
 
+.field-text--contacts {
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1 0 100%;
+
+  @media (min-width: @desktop-width) {
+    flex: 1 0 50%;
+  }
+}
+
+
 .field-text__label {
   font-size: 14px;
   line-height: 26 / 14;
   color: #333333;
   text-transform: uppercase;
   align-self: center;
-  width: auto;
-  justify-content: space-between;
-  flex-grow: 1;
+  margin-right: 15px;
+  padding-left: 20px;
+
+  &--contacts {
+    flex: 0 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .field-text__input {
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
   background-color: #f2f2f2;
   height: 58px;
-  width: auto;
+  width: 100%;
+  flex: 1 1 auto;
+  padding-left: 22px;
+}
+
+.field-text__input-wrapper {
+  flex: 0 0 100%;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    flex: 1 0 auto;
+  }
+}
+
+.field-text__phone-pic,
+.field-text__email-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.phone-pic__icon,
+.email-pic__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field-text-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
