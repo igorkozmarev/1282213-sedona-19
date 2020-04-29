@@ -15,7 +15,6 @@
     font-weight: 700;
     line-height: 26 / 14;
     text-transform: uppercase;
-    outline: 1px solid red;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,7 +40,7 @@
   }
 }
 
-.main-nav .main-nav__toggle::before {
+.main-nav__toggle::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -52,7 +51,7 @@
   right: 4px;
 }
 
-.main-nav .main-nav__toggle:hover::before {
+.main-nav__toggle:hover::before {
   background-color: #b3d1e4;
   box-shadow: 0 8px 0 0 #b3d1e4, 0 16px 0 0 #b3d1e4;
 }
@@ -107,13 +106,13 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    width: 700px;
+    width: 768px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 1200px;
   }
 }
 
@@ -204,12 +203,12 @@
 
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {
-    width: 700px;
+    width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 1200px;
     margin: 0 auto;
   }
 }
