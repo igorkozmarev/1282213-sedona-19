@@ -15,7 +15,7 @@
 .advantages__title {
   font-size: 18px;
   line-height: 26 / 18;
-  font-style: 700;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   display: block;
@@ -29,6 +29,10 @@
   color: #333333;
   text-transform: uppercase;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__box {
@@ -70,33 +74,146 @@
   }
 }
 
+
 .advantages__card {
   margin: 0;
+  padding: 0;
   padding-top: 33px;
   flex: 0 0 percentage(1 / 3);
-  height: 190px;
+  height: auto;
   background-color: #eeeeee;
   width: 100%;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #d6d6d6;
+
+  &:last-child {
+    border-bottom: none;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 50px;
+    border-bottom: none;
+    padding-bottom: 20px;
   }
 
-  &--primary {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 40px;
+  }
+
+  &--primaryfirst {
+    position: relative;
     background-color: #81b3d2;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 60px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 19px;
 
     @media (min-width: @tablet-width) {
       padding-top: 46px;
+      padding-left: 47px;
+      padding-right: 47px;
       padding-bottom: 20px;
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 57px;
-      padding-bottom: 9px;
+      padding-left: 67px;
+      padding-right: 66px;
     }
   }
+
+  &--primarysecond {
+    background-color: #81b3d2;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 19px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 50px;
+      padding-left: 51px;
+      padding-right: 51px;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 57px;
+      padding-bottom: 32px;
+      padding-left: 93px;
+      padding-right: 92px;
+    }
+  }
+  &--third {
+    padding-left: 41px;
+    padding-right: 41px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 48px;
+      padding-right: 55px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 57px;
+      padding-right: 63px;
+
+    }
+  }
+
+  &--fourth {
+    padding-left: 56px;
+    padding-right: 55px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 55px;
+      padding-right: 59px;
+    }
+
+
+    @media (min-width: @desktop-width) {
+      padding-left: 63px;
+      padding-right: 68px;
+
+    }
+  }
+
+  &--fifth {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 59px;
+      padding-right: 54px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 68px;
+      padding-right: 70px;
+    }
+  }
+
+  // &--fifth h {
+  //   @media (min-width: @tablet-width) {
+  //   padding-left: 77px;
+  //   padding-right: 80px;
+  // }
+
+
+}
+
+.advantages__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 160px solid rgba(0, 0, 0, 0);
+  border-right: 160px solid rgba(0, 0, 0, 0);
+  border-top: 17px solid #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
 }
 
 .advantages__photo-mobile {

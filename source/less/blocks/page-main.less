@@ -19,6 +19,9 @@
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 40px;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -26,6 +29,13 @@
     line-height: 26 / 21;
     color: #000000;
     text-transform: uppercase;
+    padding-left: 164px;
+    padding-right: 163px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 380px;
+    padding-right: 379px;
   }
 }
 
@@ -34,19 +44,28 @@
   line-height: 26 / 14;
   color: #333333;
   text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 355px;
+    padding-right: 354px;
+  }
 }
 
 .page-main_wrapper {
   width: 320px;
   outline: 1px solid red;
-  margin-bottom: 30px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 58px;
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 100%;
   }
 }
