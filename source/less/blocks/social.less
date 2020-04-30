@@ -7,7 +7,7 @@
   align-items: center;
   align-content: center;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -29,6 +29,16 @@
   width: 100%;
   height: 100%;
   color: #ffffff;
+
+  &:focus,
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 
   svg {
     fill: currentColor;
