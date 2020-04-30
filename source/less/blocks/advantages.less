@@ -13,6 +13,7 @@
 }
 
 .advantages__title {
+  margin: 0;
   font-size: 18px;
   line-height: 26 / 18;
   font-weight: 700;
@@ -37,7 +38,13 @@
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 160px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 270px;
   }
 }
 
@@ -63,6 +70,10 @@
 
 .advantages__description--color {
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    max-width: 170px;
+  }
 }
 
 .advantages__row {
@@ -74,6 +85,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 58px;
   }
 }
@@ -81,6 +93,7 @@
 .advantages__row--reverse {
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
+    margin-bottom: 0;
   }
 }
 
@@ -88,13 +101,12 @@
 .advantages__card {
   margin: 0;
   padding: 0;
-  padding-top: 33px;
   flex: 0 0 percentage(1 / 3);
-  height: auto;
   background-color: #eeeeee;
   width: 100%;
-  padding-bottom: 7px;
   border-bottom: 1px solid #d6d6d6;
+  padding-top: 33px;
+  padding-bottom: 7px;
 
   &:last-child {
     border-bottom: none;
@@ -102,7 +114,6 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 50px;
-    border-bottom: none;
     padding-bottom: 20px;
   }
 
@@ -114,43 +125,49 @@
     position: relative;
     background-color: #81b3d2;
     padding-top: 60px;
-    padding-left: 27px;
-    padding-right: 27px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 46px;
-      padding-left: 47px;
-      padding-right: 47px;
-      padding-bottom: 20px;
+      padding-top: 50px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 168px;
+      }
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 57px;
-      padding-left: 67px;
-      padding-right: 66px;
+      padding-bottom: 27px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 270px;
+      }
     }
   }
 
   &--primarysecond {
     background-color: #81b3d2;
     padding-top: 45px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
 
     @media (min-width: @tablet-width) {
       padding-top: 50px;
-      padding-left: 51px;
-      padding-right: 51px;
-      padding-bottom: 20px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 165px;
+      }
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 57px;
-      padding-bottom: 32px;
-      padding-left: 93px;
-      padding-right: 92px;
+      padding-bottom: 27px;
+
+      .advantages__description {
+        max-width: 222px;
+      }
     }
   }
 
@@ -159,13 +176,17 @@
     padding-right: 41px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 48px;
-      padding-right: 55px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 162px;
+      }
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 57px;
-      padding-right: 63px;
+      .advantages__description {
+        max-width: 290px;
+      }
     }
   }
 
@@ -174,14 +195,18 @@
     padding-right: 55px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 55px;
-      padding-right: 59px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 140px;
+      }
     }
 
 
     @media (min-width: @desktop-width) {
-      padding-left: 63px;
-      padding-right: 68px;
+      .advantages__description {
+        max-width: 270px;
+      }
     }
   }
 
@@ -191,14 +216,17 @@
     margin-bottom: 33px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-      padding-left: 59px;
-      padding-right: 54px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 162px;
+      }
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 68px;
-      padding-right: 70px;
+      .advantages__description {
+        max-width: 270px;
+      }
     }
   }
 }
@@ -218,10 +246,6 @@
   }
 }
 
-.advantages__photo-mobile {
-  display: none;
-}
-
 .advantages__photo {
   width: 320px;
   height: 260px;
@@ -233,7 +257,7 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    height: 256px;
+    height: 258px;
     flex: 0 0 percentage(2 / 3);
     max-width: percentage(2 / 3);
     margin-bottom: 0;
@@ -242,10 +266,14 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 256px;
     flex: 0 0 percentage(2 / 3);
     max-width: percentage(2 / 3);
   }
+}
+
+.advantages__image {
+  width: 100%;
+  height: 100%;
 }
 
 .advantages__city {
