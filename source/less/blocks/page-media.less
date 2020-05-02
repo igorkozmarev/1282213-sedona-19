@@ -13,20 +13,18 @@
 }
 
 .page-media__title {
+  margin-top: 0;
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 36px;
 
 
   @media (min-width: @tablet-width) {
-    font-size: 21px;
-    font-style: 700;
-    line-height: 26 / 21;
-    color: #000000;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 30 / 30;
   }
 }
 
@@ -35,6 +33,18 @@
   line-height: 24 / 14;
   color: #333333;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 271px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 435px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 435px;
+    margin-bottom: 75px;
+  }
 }
 
 .page-media_wrapper {
@@ -43,11 +53,8 @@
   border-bottom: 1px solid #e5e5e5;
   padding-left: 27px;
   padding-right: 25px;
-  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 76px;
-    margin-bottom: 76px;
     width: 768px;
     padding-left: 170px;
     padding-right: 168px;
@@ -55,7 +62,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 113px;
     width: 1200px;
     padding-left: 386px;
     padding-right: 386px;
