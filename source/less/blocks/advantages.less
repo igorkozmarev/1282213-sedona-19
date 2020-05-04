@@ -104,33 +104,35 @@
   flex: 0 0 percentage(1 / 3);
   background-color: #eeeeee;
   width: 100%;
-  border-bottom: 1px solid #d6d6d6;
+
   padding-top: 33px;
-  padding-bottom: 7px;
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    border-bottom: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 40px;
-  }
 
   &--primaryfirst {
     position: relative;
     background-color: #81b3d2;
-    padding-top: 60px;
+    padding-top: 82px;
     padding-bottom: 20px;
+
+    &::before {
+
+      content: "";
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 38px;
+      background-image: url("../../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
     @media (min-width: @tablet-width) {
       padding-top: 39px;
       margin: 0 auto;
+
+      &::before {
+        display: none;
+      }
 
       .advantages__description {
         max-width: 168px;
@@ -173,8 +175,8 @@
   }
 
   &--third {
-    padding-left: 41px;
-    padding-right: 41px;
+    // padding-left: 41px;
+    // padding-right: 41px;
 
     @media (min-width: @tablet-width) {
       margin: 0 auto;
@@ -192,8 +194,8 @@
   }
 
   &--fourth {
-    padding-left: 56px;
-    padding-right: 55px;
+    // padding-left: 56px;
+    // padding-right: 55px;
 
     @media (min-width: @tablet-width) {
       margin: 0 auto;
@@ -232,18 +234,25 @@
   }
 }
 
-.advantages__triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 160px solid rgba(0, 0, 0, 0);
-  border-right: 160px solid rgba(0, 0, 0, 0);
-  border-top: 17px solid #ffffff;
+.advantages__cardwrapper {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+
+  &--bordernone {
+    border-bottom: none;
+  }
 
   @media (min-width: @tablet-width) {
-    display: none;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 40px;
   }
 }
 
