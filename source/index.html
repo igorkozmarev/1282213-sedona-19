@@ -19,8 +19,8 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle main-nav__toggle--oppened" type="button"><span class="main-nav__burger ">Открыть меню</span></button>
+        <nav class="main-nav main-nav--oppened">
+          <button class="main-nav__toggle main-nav__toggle--hidden" type="button"><span class="main-nav__burger">Открыть и закрыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
@@ -39,22 +39,11 @@
           </div>
         </nav>
         <div class="page-header__background">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg"/>
-            <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg"/>
-            <img class="page-header__image" src="img/bg-back-mobile@1x.jpg" alt="Фон сайта"/>
-          </picture>
           <div class="page-header__background-text">
             <img class="page-header__image" src="img/text-sedona.svg" alt=""/>
           </div>
-          <div class="page-header__background-triangle">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg"/>
-              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg"/>
-              <img class="page-header__image" src="img/bg-intro-triangle-mobile.svg" alt=""/>
-            </picture>
-          </div>
         </div>
+        <script src="js/main-nav.js"></script>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Седона-турристический городок в штате аризона</h1>
