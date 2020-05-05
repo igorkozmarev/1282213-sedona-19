@@ -12,11 +12,11 @@
 
 .video__title {
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
+  padding: 0;
   color: #000000;
   line-height: 26 / 18;
   text-transform: uppercase;
-  padding-top: 70px;
   margin-bottom: 40px;
 }
 
@@ -27,10 +27,10 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   padding-left: 43px;
-  padding-right: 41px;
+  padding-right: 42px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
     padding-left: 177px;
     padding-right: 176px;
   }
@@ -45,6 +45,7 @@
 .video__wrapper {
   width: 100%;
   height: 200px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -62,19 +63,33 @@
   height: 100%;
 }
 
+.video__block {
+  outline: 1px solid green;
+  width: 100%;
+  height: 45px;
+  max-width: 280px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .video__button {
   margin: 0 auto;
   padding: 0;
-  height: 66px;
+  height: 65px;
   border: none;
   display: flex;
-  justify-content: center;
   width: 100%;
   max-width: 280px;
-}
 
-.video__button button {
-  border: none;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .replay {
@@ -83,6 +98,7 @@
   height: 100%;
   padding-right: 133px;
   color: #5c6870;
+  border: none;
 
   &:hover {
     color: #333333;
@@ -92,8 +108,23 @@
     color: #b8b8b8;
   }
 
+
   svg {
     fill: currentColor;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: #ffffff;
+
+    &:hover {
+      color: #c2c2c2;
+    }
+
+    &:active {
+      color: #949494;
+    }
   }
 }
 
@@ -103,6 +134,7 @@
   width: 100%;
   height: 100%;
   color: #5c6870;
+  border: none;
 
   &:hover {
     color: #333333;
@@ -115,6 +147,20 @@
   svg {
     fill: currentColor;
   }
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: #ffffff;
+
+    &:hover {
+      color: #c2c2c2;
+    }
+
+    &:active {
+      color: #949494;
+    }
+  }
 }
 
 .full {
@@ -122,6 +168,7 @@
   flex: 0 0 percentage (1/3);
   width: 100%;
   height: 100%;
+  border: none;
   color: #5c6870;
 
   &:hover {
@@ -134,5 +181,18 @@
 
   svg {
     fill: currentColor;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+
+    &:hover {
+      color: #c2c2c2;
+    }
+
+    &:active {
+      color: #949494;
+    }
   }
 }
