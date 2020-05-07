@@ -2,11 +2,11 @@
   margin-bottom: 142px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 121px;
+    margin-bottom: 116px;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 72px;
   }
 }
 
@@ -94,9 +94,15 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 43px;
-    margin-bottom: 43px;
+    margin-top: 45px;
+    margin-bottom: 45px;
     width: 390px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 540px;
   }
 }
 
@@ -127,14 +133,15 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    height: 90px;
+    height: 93px;
+    max-height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -166,7 +173,8 @@
     color: #ffffff;
     flex: 0 0 82px;
     max-width: 82px;
-
+    padding-left: 2px;
+    padding-top: 5px;
 
     &:hover {
       color: #c2c2c2;
@@ -175,6 +183,10 @@
     &:active {
       color: #949494;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -205,7 +217,8 @@
     color: #ffffff;
     flex: 0 0 82px;
     max-width: 82px;
-    padding-left: 25px;
+    padding-left: 30px;
+    padding-top: 5px;
 
 
     &:hover {
@@ -215,6 +228,11 @@
     &:active {
       color: #949494;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 25px;
+    padding-top: 4px;
   }
 }
 
@@ -244,7 +262,8 @@
     color: #ffffff;
     flex: 0 0 82px;
     max-width: 82px;
-    padding-right: 21px;
+    padding-right: 19px;
+    padding-top: 5px;
 
     &:hover {
       color: #c2c2c2;
@@ -253,5 +272,10 @@
     &:active {
       color: #949494;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 22px;
+    padding-top: 4px;
   }
 }
