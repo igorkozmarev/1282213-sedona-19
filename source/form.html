@@ -67,12 +67,16 @@
           </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--second">
-          <legend class="form__acquaintance">Контактная информация:</legend>
+          <legend class="form__acquaintance">
+            <span class="form__acquaintancebg">
+              Контактная информация:
+            </span>
+          </legend>
           <div class="field-text-wrapper">
             <div class="field-text field-text--contacts">
               <label class="field-text__label  field-text__label--contacts" for="phone">Контактный телефон<sup>*</sup>:</label>
               <div class="field-text__input-wrapper">
-                <input id="phone" class="field-text__input" type="tel" placeholder="Введите телефон">
+                <input id="phone" class="field-text__input field-text__input--contacts" type="tel" placeholder="Введите телефон">
                 <div class="field-text__phone-pic phone-pic__icon">
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
                     <g id="Page-1">
@@ -89,7 +93,7 @@
             <div class="field-text field-text--contacts">
               <label class="field-text__label  field-text__label--contacts" for="email">Электронная почта<sup>*</sup>: </label>
               <div class="field-text__input-wrapper">
-                <input id ="email" class="field-text__input" type="email" placeholder="Введите e-mail">
+                <input id ="email" class="field-text__input field-text__input--contacts" type="email" placeholder="Введите e-mail">
                 <div class="field-text__email-pic email-pic__icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
                     <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
@@ -100,7 +104,11 @@
           </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--third">
-          <legend class="form__acquaintance">Ваше общее впечатление:</legend>
+          <legend class="form__acquaintance">
+
+                Ваше общее впечатление:
+
+            </legend>
           <div class="field-radio">
             <input class="field-radio__input visually-hidden" type="radio" name="impression" value="positive" id="impression-positive" checked>
             <label class="field-radio__label" for="impression-positive">Скорее положительное</label>
@@ -115,7 +123,11 @@
           </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--fourth">
-          <legend class="form__acquaintance">Посещённые достопримечательности:</legend>
+          <legend class="form__acquaintance">
+            <span class="form__acquaintancebg form__acquaintancebg--width">
+              Посещённые достопримечательности:
+            </span>
+          </legend>
           <div class="form__fieldset__checkbox-wrapper">
             <div class="field-checkbox">
               <input class="field-checkbox__input visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
@@ -129,14 +141,17 @@
               <input class="field-checkbox__input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
               <label class="field-checkbox__label" for="slide-park">Слайд-парк</label>
             </div>
-            <div class="field-checkbox">
+            <div class="field-checkbox field-checkbox--last">
               <input class="field-checkbox__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks">
               <label class="field-checkbox__label" for="red-rocks">Красные скалы</label>
             </div>
           </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--fifth">
-          <legend class="form__acquaintance">Опишите свои эмоции:</legend>
+          <legend class="form__acquaintance">
+            <span class="form__acquaintancebg">
+              Опишите свои эмоции:</legend>
+            </span>
           <div class="field-review">
             <label class="field-review__label visually-hidden" for="emotions">Опишите подробно все свои эмоции :</label>
             <textarea id="emotions" class="field-review__textarea" placeholder="Опишите подробно все свои восторги"></textarea>

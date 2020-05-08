@@ -1,7 +1,7 @@
 .button {
   background-color: #81b3d2;
   font-size: 21px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 21;
   color: #ffffff;
   text-transform: uppercase;
@@ -11,7 +11,18 @@
 
 .button--send {
   max-width: 280px;
-  margin-bottom: 77px;
+  margin-bottom: 73px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    transition: background 0.2s;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 50%;

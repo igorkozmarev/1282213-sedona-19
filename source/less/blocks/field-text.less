@@ -1,6 +1,6 @@
 .field-text {
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: flex;
 }
 
@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   display: flex;
   flex: 1 0 100%;
+  margin-bottom: 15px;
 
   @media (min-width: @desktop-width) {
     flex: 1 0 50%;
@@ -22,10 +23,12 @@
   text-transform: uppercase;
   align-self: center;
   margin-right: 15px;
-  padding-left: 20px;
+  padding-left: 8px;
 
   &--contacts {
     flex: 0 0 auto;
+    padding-left: 22px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: @tablet-width) {
@@ -34,6 +37,7 @@
 }
 
 .field-text__input {
+  padding: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26 / 18;
@@ -43,10 +47,28 @@
   width: 100%;
   flex: 1 1 auto;
   padding-left: 22px;
+  border: none;
+
+  &--contacts {
+    align-items: center;
+    padding-left: 21px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    transition: background 0.2s;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 3px #e5e5e5;
+  }
 }
 
 .field-text__input-wrapper {
   flex: 0 0 100%;
+  max-width: 280px;
   position: relative;
 
   @media (min-width: @desktop-width) {
