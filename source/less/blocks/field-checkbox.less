@@ -1,5 +1,16 @@
 .field-checkbox {
   text-align: left;
+  display: block;
+  margin-bottom: 75px;
+
+  &:hover .field-checkbox__label::before {
+    background-color: #e5e5e5;
+    transition: background 1.5s;
+  }
+
+  &:active .field-checkbox__label::before {
+    background-color: #d5d5d5;
+  }
 }
 
 .field-checkbox__input {
@@ -17,7 +28,41 @@
   font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
-  padding-left: 25px;
+  padding-left: 75px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    margin-top: -23px;
+    left: 0;
+    top: 50;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: -17px;
+    left: 17px;
+    top: 50%;
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    transform: scale(0);
+    transition: transform 0.2s;
+  }
+}
+
+.field-checkbox__input:checked + .field-checkbox__label::after {
+  transform: scale(1);
+  transition: transform 0.2s;
 }
 
 .form__fieldset__checkbox-wrapper {
