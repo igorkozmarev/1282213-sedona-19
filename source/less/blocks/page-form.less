@@ -16,13 +16,19 @@
   padding: 0;
   margin: 0;
   font-size: 18px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
   display: block;
   text-align: center;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 30 / 30;
+    margin-bottom: 30px;
+  }
 }
 
 .page-form__description {
@@ -34,8 +40,9 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-left: 163px;
-    padding-right: 163px;
+    padding-left: 161px;
+    padding-right: 164px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,5 +56,6 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    margin-bottom: 55px;
   }
 }
