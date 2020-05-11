@@ -24,6 +24,13 @@
       padding-left: 20px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--last,
+    &--second {
+      padding-left: 0;
+    }
+  }
 }
 
 .field-checkbox__label {
@@ -73,7 +80,21 @@
     &::after {
       left: 27px;
       top: 14px;
-      background-image: url("../../img/icon-tick.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 65px;
+
+    &::before {
+      left: -81px;
+      top: 7px;
+    }
+
+    &::after {
+      left: -63px;
+      top: 14px;
     }
   }
 }
@@ -103,11 +124,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 60px;
+    padding-left: 81px;
+    max-width: 960%;
+    margin: 0 auto;
 
     .field-checkbox {
       flex-wrap: nowrap;
       flex: 0 0 25%;
+      justify-content: space-between;
     }
   }
 }

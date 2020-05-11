@@ -39,6 +39,19 @@
       padding-left: 20px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      flex: 0 0 auto;
+      padding-left: 0;
+      margin-right: 20px;
+    }
+
+    &--phone {
+      max-width: 80px;
+      margin-top: -27px;
+    }
+  }
 }
 
 .field-text__input {
@@ -76,6 +89,12 @@
       max-width: 100%;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      padding-left: 20px;
+    }
+  }
 }
 
 .field-text__input-wrapper {
@@ -91,6 +110,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 315px;
     flex: 1 0 auto;
   }
 }

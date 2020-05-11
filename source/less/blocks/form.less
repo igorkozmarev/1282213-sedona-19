@@ -89,7 +89,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 78px;
+    margin-bottom: 29px;
+    padding-left: 80px;
   }
 }
 
@@ -123,9 +124,15 @@
     .form__acquaintancebg {
       width: 400px;
       background-color: #ffffff;
-      padding-top: 70px;
+      padding-top: 68px;
       padding-left: 60px;
       padding-right: 61px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .form__acquaintance {
+      margin-bottom: 75px;
     }
   }
 }
@@ -148,6 +155,14 @@
     .form__acquaintance {
       text-align: left;
       margin-bottom: 74px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .form__acquaintance {
+      text-align: center;
+      padding-left: 0;
+      padding-right: 52px;
     }
   }
 }
@@ -189,6 +204,17 @@
       margin-right: 61px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    .form__acquaintance {
+      padding-top: 27px;
+
+      &::before {
+        position: absolute;
+        top: 53px;
+      }
+    }
+  }
 }
 
 .form__fieldset--fifth {
@@ -224,6 +250,10 @@
       padding-right: 78px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .form__star {
@@ -240,6 +270,7 @@
   @media (min-width: @desktop-width) {
     margin-left: 120px;
     margin-right: 120px;
+    margin-bottom: 100px;
   }
 }
 
