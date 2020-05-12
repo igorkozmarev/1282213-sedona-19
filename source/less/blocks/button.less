@@ -7,6 +7,23 @@
   text-transform: uppercase;
   height: 60px;
   width: 100%;
+
+  &--close,
+  &--ok {
+    font-size: 18px;
+    line-height: 26 / 18;
+    height: 58px;
+    border: none;
+    text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--close,
+    &--ok {
+      font-size: 21px;
+      line-height: 26 / 21;
+    }
+  }
 }
 
 .button--send {
