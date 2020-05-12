@@ -39,21 +39,20 @@
   margin-top: 0;
   font-size: 18px;
   line-height: 26 / 18;
-  font-style: 700;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   display: block;
   padding-left: 70px;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 26 / 21;
-    font-style: 700;
     color: #000000;
     text-transform: uppercase;
     padding: 0;
-    margin-bottom: 29px;
+    margin-bottom: 21px;
   }
 }
 
@@ -63,10 +62,11 @@
   text-transform: uppercase;
   color: #333333;
   padding-left: 70px;
-  margin-bottom: 36px;
+  margin-bottom: 29px;
 
   &--food {
     padding-right: 70px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: @tablet-width) {
@@ -128,10 +128,6 @@
     top: -5px;
   }
 
-  @media (min-width: @tablet-width) {
-    position: static;
-  }
-
   svg {
     fill: currentColor;
     width: 100%;
@@ -140,8 +136,9 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
+    position: static;
     text-align: center;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
     height: 75px;
 
     &--house {

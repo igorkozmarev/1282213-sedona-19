@@ -29,6 +29,11 @@
     line-height: 30 / 30;
     margin-bottom: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
 
 .page-form__description {
@@ -46,8 +51,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 380px;
-    padding-right: 380px;
+    // padding-left: 380px;
+    // padding-right: 380px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 443px;
+    margin: 0 auto;
   }
 }
 
