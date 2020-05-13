@@ -260,6 +260,33 @@
   }
 }
 
+.form__fieldset-checkboxwrapper {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    margin-bottom: 1px;
+
+    .field-checkbox {
+      flex: 0 0 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .field-checkbox {
+      flex: 0 0 auto;
+      padding-left: 81px;
+    }
+  }
+}
+
 .form__star {
   @media (min-width: @tablet-width) {
     width: auto;
