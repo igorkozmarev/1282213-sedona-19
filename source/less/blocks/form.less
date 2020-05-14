@@ -37,7 +37,7 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
-    //outline: 2px solid green;
+    border-bottom: none;
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0;
@@ -45,81 +45,318 @@
   }
 }
 
-.form__fieldset--first {
-  @media (min-width: @tablet-width) {
-    text-align: left;
-    padding-left: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 78px;
-  }
-}
-
-.form__fieldset--second {
-  @media (min-width: @tablet-width) {
-    height: auto;
-    flex: 1 0 100%;
-    max-width: 100%;
-    padding: 0;
-    margin-top: -38px; //точно знаю что это неправильно, но пока не могу сообразить как нужно сделать
-  }
-}
-
-.form__fieldset--third {
-  @media (min-width: @tablet-width) {
-    order: 1;
-    border-right: 1px solid #e5e5e5;
-    text-align: left;
-    max-width: 100%;
-  }
-}
-
-.form__fieldset--fourth {
-  @media (min-width: @tablet-width) {
-    height: auto;
-    flex: 1 0 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-}
-
-.form__fieldset--fifth {
-  border: none;
-  margin-bottom: 50px;
-
-  @media (min-width: @tablet-width) {
-    flex: 1 0 100%;
-    max-width: 100%;
-    padding: 0;
-    margin-bottom: 58px;
-  }
-}
-
 .form__acquaintance {
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   line-height: 26 / 18;
   color: #000000;
   text-transform: uppercase;
-  padding-top: 25px;
-  margin-bottom: 30px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26 / 21;
+  }
+}
+
+.form__acquaintancebg {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding: 0 30px;
+    background-color: #ffffff;
+  }
+}
+
+.form__fieldset--first {
+  padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    text-align: left;
+    padding-left: 57px;
+    margin-bottom: 31px;
+
+    .form__acquaintance {
+      margin-left: 0;
+      padding-left: 0;
+      text-align: left;
+      line-height: 26 / 21;
+      margin-bottom: 58px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+    padding-left: 80px;
+  }
+}
+
+.form__fieldset--second {
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+
+  .form__acquaintance {
+    padding: 0;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    flex: 1 0 100%;
+    max-width: 100%;
+    position: relative;
+
+    .form__acquaintance {
+      margin-bottom: 25px;
+      padding-top: 18px;
+    }
+
+    .form__acquaintancebg {
+      padding: 0;
+      margin: 0;
+      padding-left: 60px;
+      padding-right: 61px;
+    }
+
+    .form__acquaintace-wrapper {
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 11%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        margin-top: -1px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .form__acquaintance {
+      margin-bottom: 75px;
+    }
+
+    .form__acquaintace-wrapper {
+      &::before {
+        top: 17%;
+      }
+    }
+  }
+}
+
+.form__fieldset--third {
+  padding-left: 20px;
+  padding-bottom: 0;
+
+  .form__acquaintance {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    border-right: 1px solid #e5e5e5;
+    text-align: left;
+    max-width: 100%;
+    padding-left: 0;
+
+    .form__acquaintance {
+      margin-left: 0;
+      padding-left: 0;
+      text-align: left;
+      margin-bottom: 74px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .form__acquaintance {
+      text-align: left;
+      padding-left: 80px;
+    }
+  }
+}
+
+.form__fieldset--fourth {
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  .form__acquaintance {
+    padding-top: 20px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    height: auto;
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 0;
+
+
+    .form__acquaintance {
+      padding-left: 0;
+      margin: 0 auto;
+      padding-top: 27px;
+      margin-bottom: 57px;
+      text-align: center;
+      max-width: 286px;
+      min-height: 79px;
+    }
+
+    .form__acquaintancebg {
+      width: 400px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 auto;
+      background-color: #ffffff;
+    }
+
+    .form__acquaintace-wrapper {
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 17%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        margin-top: -1px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .form__acquaintance {
+      padding-top: 27px;
+    }
+
+    .form__acquaintace-wrapper {
+      &::before {
+        top: 24%;
+      }
+    }
+  }
+}
+
+.form__fieldset--fifth {
+  border: none;
+  margin-bottom: 47px;
+  padding: 0;
+
+  .form__acquaintance {
+    padding-top: 19px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    height: auto;
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 55px;
+
+    .form__acquaintance {
+      padding-left: 0;
+      margin: 0 auto;
+      padding-top: 20px;
+      margin-bottom: 57px;
+      text-align: center;
+    }
+
+    .form__acquaintancebg {
+      max-width: 100%;
+      margin: 0 auto;
+      padding-left: 73px;
+      padding-right: 78px;
+      background-color: #ffffff;
+    }
+
+    .form__acquaintace-wrapper {
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 12%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        margin-top: -1px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+
+    .form__acquaintance {
+      padding-left: 0;
+      padding-top: 18px;
+      margin-bottom: 57px;
+      text-align: center;
+    }
+
+    .form__acquaintace-wrapper {
+      &::before {
+        top: 12%;
+      }
+    }
+  }
+}
+
+.form__fieldset-checkboxwrapper {
+  @media (min-width: @tablet-width) {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    margin-bottom: 1px;
+
+    .field-checkbox {
+      flex: 0 0 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .field-checkbox {
+      flex: 0 0 auto;
+      padding-left: 81px;
+    }
+  }
 }
 
 .form__star {
   @media (min-width: @tablet-width) {
-
     width: auto;
     display: flex;
     margin-left: 60px;
     margin-right: 60px;
     justify-content: space-between;
-    margin-bottom: 100px;
+    align-items: center;
+    margin-bottom: 94px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 120px;
     margin-right: 120px;
+    margin-bottom: 100px;
   }
 }
 

@@ -13,22 +13,43 @@
 }
 
 .advantages__title {
+  margin-top: 0;
   font-size: 18px;
   line-height: 26 / 18;
-  font-style: 700;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 130px;
+    font-size: 21px;
+    line-height: 26 / 21;
+    margin-bottom: 11px;
+  }
 }
+
 
 .advantages__description {
   font-size: 14px;
   line-height: 21 / 14;
   color: #333333;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 160px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .advantages__box {
@@ -45,10 +66,35 @@
 
 .advantages__title--color {
   color: #ffffff;
+  margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 160px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 26 / 21;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .advantages__description--color {
   color: #ffffff;
+  max-width: 265px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 170px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .advantages__row {
@@ -60,57 +106,197 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    justify-content: space-between;
+    margin-bottom: 58px;
   }
 }
 
 .advantages__row--reverse {
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
+    margin-bottom: 0;
   }
 }
+
 
 .advantages__card {
   margin: 0;
-  padding-top: 33px;
+  padding: 0;
   flex: 0 0 percentage(1 / 3);
-  height: 190px;
   background-color: #eeeeee;
   width: 100%;
+  padding-top: 33px;
 
-  @media (min-width: @tablet-width) {
-    padding-top: 50px;
-  }
-
-  &--primary {
+  &--primaryfirst {
+    position: relative;
     background-color: #81b3d2;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 81px;
+    padding-bottom: 25px;
+
+    &::before {
+
+      content: "";
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 38px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+    }
 
     @media (min-width: @tablet-width) {
-      padding-top: 46px;
-      padding-bottom: 20px;
+      margin: 0 auto;
+      padding-top: 40px;
+      padding-bottom: 15px;
+
+      &::before {
+        display: none;
+      }
+
+      .advantages__description {
+        max-width: 168px;
+      }
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 57px;
-      padding-bottom: 9px;
+      padding-top: 52px;
+      padding-bottom: 27px;
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 270px;
+      }
+    }
+  }
+
+  &--primarysecond {
+    background-color: #81b3d2;
+    padding-top: 40px;
+    padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 256px;
+      padding-top: 43px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 52px;
+      padding-bottom: 27px;
+
+      .advantages__description {
+        max-width: 222px;
+      }
+    }
+  }
+
+  &--third {
+    padding-top: 27px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+      padding-top: 29px;
+
+      .advantages__description {
+        max-width: 162px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      .advantages__description {
+        max-width: 290px;
+      }
+    }
+  }
+
+  &--fourth {
+    padding-top: 29px;
+
+    .advantages__description {
+      margin: 0 auto;
+      max-width: 211px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+
+      .advantages__description {
+        max-width: 140px;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      .advantages__description {
+        max-width: 262px;
+      }
+    }
+  }
+
+  &--fifth {
+    padding-top: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 29px;
+
+      .advantages__description {
+        max-width: 162px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 256px;
+      padding-top: 29px;
+
+      .advantages__description {
+        max-width: 260px;
+      }
     }
   }
 }
 
-.advantages__photo-mobile {
-  display: none;
+.advantages__cardwrapper {
+  padding-bottom: 11px;
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+
+  &--bordernone {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 18px;
+    border-bottom: none;
+    min-height: 227px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 285px;
+    padding-bottom: 43px;
+  }
 }
 
 .advantages__photo {
-  .advantages__photo-mobile {
-    display: block;
-  }
   width: 320px;
   height: 260px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
+  &--bridge {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -123,18 +309,29 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 256px;
     flex: 0 0 percentage(2 / 3);
     max-width: percentage(2 / 3);
   }
 }
 
+.advantages__image {
+  width: 100%;
+  height: 100%;
+}
+
 .advantages__city {
   flex: 0 0 100%;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex: 0 0 percentage(1 / 3);
     max-width: percentage(1 / 3);
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
   }
 }
 

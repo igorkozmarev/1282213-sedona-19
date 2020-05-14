@@ -1,21 +1,57 @@
 .button {
   background-color: #81b3d2;
   font-size: 21px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26 / 21;
   color: #ffffff;
   text-transform: uppercase;
   height: 60px;
   width: 100%;
+
+  &--close,
+  &--ok {
+    font-size: 18px;
+    line-height: 26 / 18;
+    height: 58px;
+    border: none;
+    text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--close,
+    &--ok {
+      font-size: 21px;
+      line-height: 26 / 21;
+    }
+  }
 }
 
 .button--send {
   max-width: 280px;
-  margin-bottom: 77px;
+  margin-bottom: 73px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    transition: background 0.2s;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 
   @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
     max-width: 50%;
     margin-bottom: 0;
     flex: 1 0 50%;
+    padding-left: 6px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 12px;
   }
 }

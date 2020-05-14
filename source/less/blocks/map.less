@@ -1,0 +1,17 @@
+.map {
+  margin-bottom: 32px;
+  height: 350px;
+  position: relative;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
+    background-image: url("../img/map-desktop.jpg");
+  }
+}

@@ -1,60 +1,241 @@
 .main-nav {
   background-color: #81b3d2;
-  font-size: 18px;
-  font-style: 700;
-  line-height: 40 / 18;
-  text-transform: uppercase;
-  text-align: center;
   width: 320px;
   margin: 0 auto;
+  position: relative;
+
+  flex: 0 0 100%;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 768px;
     margin: 0;
     background-color: #ffffff;
     text-align: center;
     font-size: 14px;
-    font-style: 700;
+    font-weight: 700;
     line-height: 26 / 14;
     text-transform: uppercase;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+
+.main-nav--oppened .main-nav__list {
+  display: block;
+}
+
+.main-nav__toggle--hidden {
+  display: block;
+}
+
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  bottom: -43px;
+  right: 17px;
+  width: 32px;
+  height: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background: #81b3d2;
+    box-shadow: 0 8px 0 0 #81b3d2, 0 17px 0 0 #81b3d2;
+    top: 6px;
+    right: 4px;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #b3d1e4;
+      box-shadow: 0 8px 0 0 #b3d1e4, 0 16px 0 0 #b3d1e4;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d9e8f1;
+      box-shadow: 0 8px 0 0 #d9e8f1, 0 16px 0 0 #d9e8f1;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--oppened {
+  top: 30px;
+  right: 20px;
+  left: auto;
+  background-color: #81b3d2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    box-shadow: none;
+    width: 23px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: #cde1ed;
+      box-shadow: none;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: #a7cae0;
+      box-shadow: none;
+    }
+  }
+}
+
+
+.main-nav__burger {
+  font-size: 0;
+  line-height: 0;
 }
 
 .main-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    width: 700px;
+    // display: block;
+    width: 768px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 1200px;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 239px;
   }
 }
 
 .main-nav__item a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40 / 18;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
+
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 26 / 14;
     color: #000000;
+    padding-top: 14px;
+    padding-bottom: 16px;
+
+    &:focus,
+    &:hover {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #b2b2b2;
+    }
+  }
+}
+
+.main-nav__item--active a {
+  &:focus,
+  &:hover {
+    background-color: #81b3d2;
+  }
+
+  &:active {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: #766357;
+
+    &:focus,
+    &:hover {
+      background-color: #ffffff;
+      color: #604e43;
+    }
+
+    &:active {
+      color: #d6d0cc;
+    }
   }
 }
 
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {
-    width: 700px;
+    width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 1200px;
     margin: 0 auto;
   }
 }
