@@ -89,9 +89,9 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("build/less/**/*.less", gulp.series("css"));
-  gulp.watch("build/img/icon-*.svg", gulp.series("sprite","html","refresh"));
-  gulp.watch("build/*.html", gulp.series("html","refresh"));
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite","html","refresh"));
+  gulp.watch("source/*.html", gulp.series("html","refresh"));
 });
 
 gulp.task ("refresh", function(done) {
