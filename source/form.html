@@ -234,7 +234,7 @@
               <div class="field-review">
                 <label class="field-review__label visually-hidden" for="emotions">Опишите подробно все свои эмоции :</label>
                 <textarea id="emotions" class="field-review__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-               </div>
+              </div>
             </fieldset>
           </div>
           <div class="form__star">
@@ -284,20 +284,21 @@
         </div>
       </footer>
     </div>
+    <!-- popup--visible этот модификатор показывает модальные окна -->
     <div class="popup">
-      <div class="popup-succes">
-        <div class="popup-succes__text-wrapper">
-          <h3 class="popup-succes__title">Ваш отзыв отправлен!</h3>
-          <p class="popup-succes__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее&nbsp;время мы опубликуем его на сайте.</p>
+      <div class="popup__succes">
+        <div class="popup__succes-textwrapper">
+          <h3 class="popup__succes-title">Ваш отзыв отправлен!</h3>
+          <p class="popup__succes-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее&nbsp;время мы опубликуем его на сайте.</p>
         </div>
-        <div class="popup-succes__button-wrapper">
+        <div class="popup__succes-buttonwrapper">
           <button class="button button--close" type="submit">Закрыть окно</button>
         </div>
       </div>
-      <div class="popup-failure ">
-        <h3 class="popup-failure__title">Что-то пошло не так!</h3>
-        <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <div class="popup-failure__button-wrapper">
+      <div class="popup__failure ">
+        <h3 class="popup__failure-title">Что-то пошло не так!</h3>
+        <p class="popup__failure-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="popup__failure-buttonwrapper">
           <button class="button button--ok" type="submit">Ок</button>
         </div>
       </div>

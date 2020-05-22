@@ -2,16 +2,30 @@
   text-align: left;
   margin-bottom: 20px;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .field-text--contacts {
+  margin: 0;
   flex-wrap: wrap;
   display: flex;
   flex: 1 0 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @desktop-width) {
     flex: 1 0 50%;
+    margin-bottom: 10px;
   }
 }
 
