@@ -38,7 +38,7 @@
   max-width: 268px;
 
   @media (min-width: @tablet-width) {
-    max-width: 425px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 68px;
   }
@@ -50,22 +50,20 @@
 }
 
 .page-media_wrapper {
+  margin: 0 auto;
   margin-top: 0;
   width: 320px;
   border-bottom: 1px solid #e5e5e5;
-  padding-left: 25px;
-  padding-right: 25px;
+  max-width: 270px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    padding-left: 170px;
-    padding-right: 168px;
+    max-width: 430px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding-left: 386px;
-    padding-right: 386px;
+    max-width: 428px;
   }
 }

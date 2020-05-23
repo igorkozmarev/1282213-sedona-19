@@ -29,15 +29,12 @@
     line-height: 30 / 30;
     margin-bottom: 30px;
   }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 115px;
-    padding-right: 115px;
-  }
 }
 
 .page-form__description {
   padding: 0;
+  margin: 0 auto;
+  max-width: 320px;
   padding-bottom: 2px;
   font-size: 14px;
   line-height: 24 / 14;
@@ -45,24 +42,19 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-left: 161px;
-    padding-right: 164px;
-    padding-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
     max-width: 443px;
-    margin: 0 auto;
+    padding-bottom: 0;
   }
 }
 
 .page-form__title-wrapper {
+  margin: 0 auto;
+  max-width: 320px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     border: none;
+    max-width: 443px;
     margin-bottom: 53px;
   }
 

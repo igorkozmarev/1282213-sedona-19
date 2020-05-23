@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -23,8 +23,12 @@
   width: 46px;
   height: 48px;
 
-  &:not(:last-child) {
-    margin-right: auto;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
   }
 }
 

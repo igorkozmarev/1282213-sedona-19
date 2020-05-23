@@ -55,8 +55,8 @@ gulp.task("js", function () {
   return gulp.src("source/js/*.js")
     .pipe(plumber())
     .pipe(sourcemap.init())
-
-    .pipe (rename ("main.min.js"))
+    .pipe(uglify())
+    .pipe (concat ("main.js", {newLine: ";"}))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());

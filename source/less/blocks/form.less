@@ -2,9 +2,11 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 71px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,7 +81,7 @@
     padding-left: 57px;
     margin-bottom: 31px;
     border-bottom: none;
-    
+
     .form__acquaintance {
       margin-left: 0;
       padding-left: 0;
@@ -90,7 +92,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     padding-left: 80px;
   }
 }
@@ -117,7 +119,7 @@
     flex: 1 0 100%;
     max-width: 100%;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     border-bottom: none;
 
     .form__acquaintance {
@@ -148,7 +150,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 17px;
 
     .form__acquaintance {
       margin-bottom: 72px;
@@ -204,6 +206,8 @@
   border-bottom: 1px solid #e5e5e5;
 
   .form__acquaintance {
+    margin: 0 auto;
+    max-width: 238px;
     padding-top: 13px;
     margin-bottom: 32px;
   }
@@ -217,8 +221,10 @@
     border-bottom: none;
 
     .form__acquaintance {
-      padding-left: 0;
+      display: block;
       margin: 0 auto;
+      padding-left: 0;
+      max-width: 100%;
       padding-top: 27px;
       margin-bottom: 57px;
       text-align: center;
@@ -227,6 +233,7 @@
 
     .form__acquaintancebg {
       width: 400px;
+      max-width: 278px;
       padding-left: 0;
       padding-right: 0;
       margin: 0 auto;
@@ -234,6 +241,10 @@
     }
 
     .form__acquaintace-wrapper {
+      margin: 0 auto;
+      width: 400px;
+      background-color: #ffffff;
+
       &::before {
         z-index: -1;
         content: "";
