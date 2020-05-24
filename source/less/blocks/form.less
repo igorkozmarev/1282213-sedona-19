@@ -39,7 +39,7 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-    flex: 0 0 50%;
+    flex: 0 0 (50%)-1px;
     max-width: 50%;
     padding: 0;
     order: 2;
@@ -349,10 +349,6 @@
     flex-wrap: wrap;
     max-width: 480px;
     margin-bottom: 1px;
-
-    .field-checkbox {
-      flex: 0 0 50%;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -360,11 +356,6 @@
     max-width: 100%;
     margin: 0 auto;
     justify-content: space-between;
-
-    .field-checkbox {
-      flex: 0 0 auto;
-      padding-left: 81px;
-    }
   }
 }
 

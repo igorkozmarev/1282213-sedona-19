@@ -17,18 +17,27 @@
   }
 
   @media (min-width: @tablet-width) {
+    flex: 0 0 auto;
     margin-bottom: 63px;
+    max-width: 220px;
 
-    &--last,
-    &--second {
-      padding-left: 20px;
+    &--first,
+    &--third {
+      min-width: 200px;
+      max-width: 205px;
+      margin-right: 60px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    &--last,
-    &--second {
-      padding-left: 0;
+    padding-left: 81px;
+    max-width: 100%;
+
+    &--first,
+    &--third {
+      min-width: auto;
+      max-width: 100%;
+      margin-right: 0;
     }
   }
 }
