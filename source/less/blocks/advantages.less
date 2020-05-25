@@ -342,3 +342,136 @@
     order: 1;
   }
 }
+
+.advantages__city-list {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    display: flex;
+  }
+}
+
+.advantages__city-text-wrapper {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.advantages__city-title {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 26 / 18;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 70px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26 / 21;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.advantages__city-description {
+  font-size: 14px;
+  line-height: 21 / 14;
+  text-transform: uppercase;
+  color: #333333;
+  padding-left: 70px;
+  margin-bottom: 29px;
+
+  &--food {
+    padding-right: 70px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0 auto;
+
+
+    &--house {
+      max-width: 165px;
+    }
+
+    &--food {
+      max-width: 157px;
+    }
+
+    &--gift {
+      max-width: 171px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--house {
+      max-width: 256px;
+    }
+
+    &--food {
+      max-width: 285px;
+    }
+
+    &--gift {
+      max-width: 222px;
+    }
+  }
+}
+
+.advantages__city-icon {
+  color: #81b3d2;
+  position: absolute;
+  left: 5px;
+  transform: scale(0.5);
+  height: 75px;
+
+  &--house {
+    width: 72px;
+    height: 75px;
+    top: -27px;
+  }
+
+  &--gift {
+    width: 64px;
+    left: 10px;
+    top: -30px;
+  }
+
+  &--food {
+    width: 77px;
+    left: 0;
+    top: -22px;
+  }
+
+  svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    position: static;
+    text-align: center;
+    transform: none;
+    margin-bottom: 25px;
+  }
+}

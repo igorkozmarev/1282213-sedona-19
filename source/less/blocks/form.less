@@ -2,9 +2,11 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 71px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,11 +36,10 @@
   margin: 0;
   text-align: center;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-    flex: 0 0 50%;
+    flex: 0 0 (50%)-1px;
     max-width: 50%;
     padding: 0;
     order: 2;
@@ -72,12 +73,14 @@
 
 .form__fieldset--first {
   padding-bottom: 4px;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
     text-align: left;
     padding-left: 57px;
     margin-bottom: 31px;
+    border-bottom: none;
 
     .form__acquaintance {
       margin-left: 0;
@@ -89,7 +92,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     padding-left: 80px;
   }
 }
@@ -99,6 +102,8 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 13px;
+  min-height: 287px;
+  border-bottom: 1px solid #e5e5e5;
 
   .form__acquaintance {
     padding: 0;
@@ -109,10 +114,13 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     margin: 0;
+    min-height: auto;
     height: auto;
     flex: 1 0 100%;
     max-width: 100%;
     position: relative;
+    margin-bottom: 17px;
+    border-bottom: none;
 
     .form__acquaintance {
       margin-bottom: 25px;
@@ -142,8 +150,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+
     .form__acquaintance {
-      margin-bottom: 75px;
+      margin-bottom: 72px;
     }
 
     .form__acquaintace-wrapper {
@@ -157,6 +167,9 @@
 .form__fieldset--third {
   padding-left: 20px;
   padding-bottom: 0;
+  margin-bottom: 0;
+  min-height: 290px;
+  border-bottom: 1px solid #e5e5e5;
 
   .form__acquaintance {
     margin-bottom: 31px;
@@ -164,10 +177,12 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
-    border-right: 1px solid #e5e5e5;
     text-align: left;
+    border-bottom: none;
     max-width: 100%;
     padding-left: 0;
+    margin-bottom: 67px;
+    border-right: 1px solid #e5e5e5;
 
     .form__acquaintance {
       margin-left: 0;
@@ -188,10 +203,13 @@
 .form__fieldset--fourth {
   padding-bottom: 0;
   margin-bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
 
   .form__acquaintance {
-    padding-top: 20px;
-    margin-bottom: 27px;
+    margin: 0 auto;
+    max-width: 238px;
+    padding-top: 13px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: @tablet-width) {
@@ -200,20 +218,22 @@
     flex: 1 0 100%;
     max-width: 100%;
     padding: 0;
-
+    border-bottom: none;
 
     .form__acquaintance {
-      padding-left: 0;
+      display: block;
       margin: 0 auto;
+      padding-left: 0;
+      max-width: 100%;
       padding-top: 27px;
       margin-bottom: 57px;
       text-align: center;
-      // max-width: 286px;
       min-height: 79px;
     }
 
     .form__acquaintancebg {
       width: 400px;
+      max-width: 400px;
       padding-left: 0;
       padding-right: 0;
       margin: 0 auto;
@@ -221,6 +241,10 @@
     }
 
     .form__acquaintace-wrapper {
+      margin: 0 auto;
+      width: 400px;
+      background-color: #ffffff;
+
       &::before {
         z-index: -1;
         content: "";
@@ -265,6 +289,7 @@
     max-width: 100%;
     padding: 0;
     margin-bottom: 55px;
+    border-bottom: none;
 
     .form__acquaintance {
       padding-left: 0;
@@ -324,10 +349,6 @@
     flex-wrap: wrap;
     max-width: 480px;
     margin-bottom: 1px;
-
-    .field-checkbox {
-      flex: 0 0 50%;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -335,11 +356,6 @@
     max-width: 100%;
     margin: 0 auto;
     justify-content: space-between;
-
-    .field-checkbox {
-      flex: 0 0 auto;
-      padding-left: 81px;
-    }
   }
 }
 
@@ -361,7 +377,7 @@
   }
 }
 
-.form__star--description {
+.form__star-description {
   display: none;
 
   @media (min-width: @tablet-width) {

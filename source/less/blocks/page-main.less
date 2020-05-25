@@ -13,6 +13,7 @@
 }
 
 .page-main__title {
+  margin: 0 auto;
   margin-top: 0;
   font-size: 18px;
   font-weight: 700;
@@ -20,17 +21,13 @@
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 29px;
-  padding-left: 30px;
-  padding-right: 30px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin: 0 auto;
     font-size: 21px;
     line-height: 26 / 21;
     color: #000000;
     text-transform: uppercase;
-    max-width: 490px;
     margin-bottom: 28px;
   }
 
@@ -44,14 +41,13 @@
   line-height: 26 / 14;
   color: #333333;
   text-transform: uppercase;
-  padding-left: 35px;
-  padding-right: 35px;
+  margin: 0 auto;
+  max-width: 250px;
   margin-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin: 0 auto;
-    max-width: 490px;
+    max-width: 100%;
     margin-bottom: 51px;
   }
 
@@ -61,10 +57,13 @@
 }
 
 .page-main_wrapper {
+  margin: 0 auto;
   width: 320px;
   display: block;
+  max-width: 260px;
 
   @media (min-width: @tablet-width) {
+    max-width: 500px;
     width: 100%;
   }
 }

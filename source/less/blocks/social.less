@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -17,10 +17,19 @@
 }
 
 .social__item {
+
   margin: 0 auto;
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
+  }
 }
 
 .social__link {
