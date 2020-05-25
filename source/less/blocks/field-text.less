@@ -65,10 +65,12 @@
       padding-left: 0;
       margin-right: 20px;
     }
+  }
+}
 
-    &--hidden {
-      display: none;
-    }
+.field-text__label-hidden {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -149,8 +151,8 @@
   background-color: #e6e6e6;
 }
 
-.phone-pic__icon,
-.email-pic__icon {
+.field-text__phone-pic--icon,
+.field-text__email-pic--icon {
   display: flex;
   align-items: center;
   justify-content: center;
