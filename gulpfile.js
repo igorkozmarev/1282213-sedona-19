@@ -52,7 +52,11 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src([
+    "./node_modules/svg4everybody/dist/svg4everybody.js",
+    "./node_modules/picturefill/dist/picturefill.js",
+    "source/js/*.js"
+  ])
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(uglify())
