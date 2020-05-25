@@ -15,9 +15,9 @@ var server = require("browser-sync").create();
 var posthtml = require("gulp-posthtml");
 var include = require ("posthtml-include");
 var del = require ("del");
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -94,20 +94,6 @@ gulp.task("clean", function(){
   return del ("build");
 });
 
-gulp.task("scripts", function() {
-  return gulp.src("./lib/*.js")
-    .pipe(concat("all.js"))
-    .pipe(gulp.dest("./dist/"));
-});
-
-gulp.task("compress", function () {
-  return pipeline(
-        gulp.src("lib/*.js"),
-        uglify(),
-        gulp.dest("dist")
-  );
-});
-
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -131,6 +117,7 @@ gulp.task ("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "js",
   "sprite",
   "html"
 ));
